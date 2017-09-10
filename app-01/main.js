@@ -30,3 +30,19 @@ app.factory("myFactory02", function() {
         }
     }
 })
+
+app.controller('myNestedParentCtrl', function($scope) {
+    $scope.showMessage = function() {
+        console.log('This is child parent')
+    };
+});
+app.controller('myNestedChildCtrl01', function($scope) {
+    $scope.showMessage = function() {
+        console.log('This is child 01')
+    };
+});
+app.controller('myNestedChildCtrl02', function($scope) {
+    // $scope.showChild02 = function() {
+    //     // console.log('This is child 02')
+    // };
+});

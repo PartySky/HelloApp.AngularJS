@@ -16,6 +16,17 @@
     <div ng-controller="mySecondCtrl">
         <input type="text" ng-model="myFactory.hello"> {{myBook}} {{hello + myBook}} {{myFactory.hello}}
     </div>
+    Nested controllers
+    <br/>
+    <div ng-controller="myNestedParentCtrl">
+        <div ng-controller="myNestedChildCtrl01">
+            <button ng-click='showMessage()'>Show 01 child</button>
+        </div>
+        <div ng-controller="myNestedChildCtrl02">
+            <button ng-click='showMessage()'>Show 02 child</button>
+        </div>
+
+    </div>
 </body>
 
 </html>
