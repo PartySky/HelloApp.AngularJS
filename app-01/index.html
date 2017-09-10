@@ -11,7 +11,7 @@
     <div ng-controller='myFirstCtrl'>
         <input type="text" ng-model="myFactory.hello"> {{myFactory.hello}} {{hello}} {{getBookmark()}}
         <button ng-click='setHello("Foo")'>Foo</button>
-        <button ng-click='setHello("Bar")'>Bar</button>
+        <button ng-click='setHello("Bar")'>Bar</button> {{myFactory02.hello()}}
     </div>
     <div ng-controller="mySecondCtrl">
         <input type="text" ng-model="myFactory.hello"> {{myBook}} {{hello + myBook}} {{myFactory.hello}}
